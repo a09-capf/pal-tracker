@@ -12,10 +12,9 @@ import java.util.List;
 public class TimeEntryController {
     private final TimeEntryRepository timeEntryRepository;
 
-    public TimeEntryController(@Autowired TimeEntryRepository timeEntryRepository) {
+    public TimeEntryController(TimeEntryRepository timeEntryRepository) {
         this.timeEntryRepository = timeEntryRepository;
     }
-
 
     @PostMapping
     public ResponseEntity create(@RequestBody TimeEntry timeEntryToCreate) {

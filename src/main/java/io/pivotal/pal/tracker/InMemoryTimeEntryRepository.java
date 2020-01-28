@@ -1,11 +1,12 @@
 package io.pivotal.pal.tracker;
 
+import org.springframework.stereotype.Repository;
+
 import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
-
 
 public class InMemoryTimeEntryRepository implements TimeEntryRepository {
 
